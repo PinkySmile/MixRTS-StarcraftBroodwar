@@ -1,0 +1,32 @@
+{
+	"_general": {
+		"_build": "build",
+		"selectable": true,
+		"sellable": false,
+		"repairable": false,
+		"requires_placement": true,
+		"_death_sound": "explhg1"
+	},
+	"hatchery": {
+		"anims": [
+			{ "anim": "hatchery", "layer": 1, "delay": 10 }
+		],
+		"central": true,
+		"queue": "hatchery",
+		"armor": "building",
+		"requirements": [],
+		"cost": { "minerals": 300 },
+		"sight": 4,
+		"tags": ["capturable_building", "building"],
+		"_build_anim": { "anim": "cony_make", "layer": 1, "delay": 6 },
+		"hp": 3000,
+		"gives_queue": "hatchery",
+		"size": { "x": 128, "y": 96 },
+		"select": { "y": -4, "h": 128, "w": 96 },
+		"tiles": [
+			[15, 15, 15, 15],
+			[15, 15, 15, 15],
+			[15, 15, 15, 15]
+		]
+	}
+}

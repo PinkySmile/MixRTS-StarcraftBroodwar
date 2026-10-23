@@ -1,0 +1,12 @@
+{
+	"_general": {
+		"bounds": { "x": 0, "y": 0, "w": 0, "h": 0 },
+		"coloring": { "type": "palette", "indices": [15, 14, 13, 12, 11, 10, 9, 8] }
+	},
+	"nexus": [
+		{
+			"sprite": "protoss/buildings/nexus0.png",
+			"offset": { "x": -32, "y": -64 }
+		}
+	]
+}

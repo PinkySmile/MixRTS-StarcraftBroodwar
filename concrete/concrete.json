@@ -1,0 +1,51 @@
+{
+	"_general": {
+		"_build": "conc_build",
+		"selectable": false,
+		"sellable": false,
+		"repairable": false,
+		"requires_placement": true,
+		"armor": "su"
+	},
+	"conc": {
+		"requirements": [],
+		"anims": [{ "anim": "conc", "layer": -2 }],
+		"cost": {},
+		"tags": ["concrete"],
+		"build_speed": 461,
+		"hp": 500,
+		"tiles": [[9]],
+		"size": { "x": 32, "y": 32 }
+	},
+	"2con": {
+		"requirements": [],
+		"anims": [],
+		"queue": "scv",
+		"cost": { "minerals": 2 },
+		"tags": [],
+		"build_speed": 307,
+		"hp": 500,
+		"tiles": [
+			[9, 9, 9],
+			[9, 9, 9]
+		],
+		"fake": true,
+		"size": { "x": 96, "y": 64 }
+	},
+	"3con": {
+		"requirements": ["barracks"],
+		"anims": [],
+		"queue": "scv",
+		"cost": { "minerals": 5 },
+		"tags": [],
+		"build_speed": 461,
+		"hp": 500,
+		"tiles": [
+			[9, 9, 9, 9],
+			[9, 9, 9, 9],
+			[9, 9, 9, 9]
+		],
+		"fake": true,
+		"size": { "x": 128, "y": 96 }
+	}
+}

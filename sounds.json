@@ -1,0 +1,28 @@
+{
+	"build": { "path": "sounds/BUILD1.ogg", "volume": 60 },
+	"conc_build": { "path": "sounds/CHUNG.ogg", "volume": 60 },
+	"crush": { "path": "sounds/CRUSH1.ogg" },
+	"explsml1": { "path": "sounds/EXPLSML1.ogg" },
+	"explsml2": { "path": "sounds/EXPLSML2.ogg" },
+	"explsml3": { "path": "sounds/EXPLSML3.ogg" },
+	"explsml4": { "path": "sounds/EXPLSML4.ogg" },
+	"explmd1": { "path": "sounds/EXPLMD1.ogg" },
+	"explmd2": { "path": "sounds/EXPLMD2.ogg" },
+	"explmd3": { "path": "sounds/EXPLMD3.ogg" },
+	"expllg1": { "path": "sounds/EXPLLG1.ogg" },
+	"expllg2": { "path": "sounds/EXPLLG2.ogg" },
+	"expllg3": { "path": "sounds/EXPLLG3.ogg" },
+	"explhg1": { "path": "sounds/EXPLHG1.ogg" },
+	"explhg2": { "path": "sounds/EXPLHG2.ogg" },
+	"killguy": [
+		{ "path": "sounds/KILLGUY1.ogg", "volume": 80 },
+		{ "path": "sounds/KILLGUY2.ogg", "volume": 80 },
+		{ "path": "sounds/KILLGUY3.ogg", "volume": 80 },
+		{ "path": "sounds/KILLGUY4.ogg", "volume": 80 },
+		{ "path": "sounds/KILLGUY5.ogg", "volume": 80 },
+		{ "path": "sounds/KILLGUY6.ogg", "volume": 80 },
+		{ "path": "sounds/KILLGUY7.ogg", "volume": 80 },
+		{ "path": "sounds/KILLGUY8.ogg", "volume": 80 },
+		{ "path": "sounds/KILLGUY9.ogg", "volume": 80 }
+	]
+}

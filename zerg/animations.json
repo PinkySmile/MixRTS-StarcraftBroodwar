@@ -1,0 +1,32 @@
+{
+	"_general": {
+		"bounds": { "x": 0, "y": 0, "w": 0, "h": 0 },
+		"coloring": { "type": "palette", "indices": [15, 14, 13, 12, 11, 10, 9, 8] }
+	},
+	"hatchery": [
+		{
+			"sprite": "zerg/hatchery/hatchery0.png",
+			"offset": { "x": -32, "y": -32 }
+		},
+		{
+			"sprite": "zerg/hatchery/hatchery1.png",
+			"offset": { "x": -32, "y": -32 }
+		},
+		{
+			"sprite": "zerg/hatchery/hatchery2.png",
+			"offset": { "x": -32, "y": -32 }
+		},
+		{
+			"sprite": "zerg/hatchery/hatchery3.png",
+			"offset": { "x": -32, "y": -32 }
+		},
+		{
+			"sprite": "zerg/hatchery/hatchery4.png",
+			"offset": { "x": -32, "y": -32 }
+		},
+		{
+			"sprite": "zerg/hatchery/hatchery5.png",
+			"offset": { "x": -32, "y": -32 }
+		}
+	]
+}

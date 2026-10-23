@@ -1,0 +1,162 @@
+{
+	"_general": {
+		"can_sell": false,
+		"can_repair": false,
+		"ui_path": "ui/ui.ui",
+		"place": {
+			"ok":   [ "cursor/tile_ok.png"   ],
+			"bad":  [ "cursor/tile_bad.png"  ],
+			"best": [ "cursor/tile_best.png" ]
+		},
+		"money": [ "minerals", "vespene_gas" ],
+		"grid": { "x": 32, "y": 32 },
+		"starting_money": { "sc:mineral": 300, "sc:vespene_gas": 0 },
+		"regress_tech": true,
+		"has_radar": true,
+		"radar_powered": false,
+		"objects": [ "concrete/concrete.json" ]
+	},
+	"terran": {
+		"objects": [ "terran/buildings.json", "terran/units.json" ],
+		"animations": [ "terran/animations.json", "concrete/concrete_anim.json" ],
+		"sounds": [ "terran/sounds.json" ],
+		"upgrades": [ "terran/upgrades.json" ],
+		"weapons": [ "terran/weapons.json" ],
+		"warheads": [ "terran/warheads.json" ],
+		"effects": [],
+		"ui_params": {
+			"blazon": "ui/common/blazon_a.png",
+			"cameo_prefix": "a",
+			"eva_folder": "atreides"
+		},
+		"primary_queue": "command_center",
+		"starting_objects": [
+			{ "name": "command_center", "offset": { "x": -64, "y": -32 }, "queue": "" }
+		],
+
+		"queues": {
+			"scv": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "placement"
+			},
+			"command_center": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "inside"
+			},
+			"barracks": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "inside"
+			},
+			"factory": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "inside"
+			},
+			"engineering_bay": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "none"
+			},
+			"armory": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "none"
+			},
+			"academy": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "none"
+			},
+			"covert_ops": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "none"
+			},
+			"machine_shop": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "none"
+			},
+			"science_facility": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "none"
+			},
+			"control_tower": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "none"
+			},
+			"physics_lab": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "none"
+			}
+		}
+	},
+	"protoss": {
+		"objects": [ "protoss/buildings.json", "protoss/units.json" ],
+		"animations": [ "protoss/animations.json", "concrete/concrete_anim.json" ],
+		"sounds": [ "protoss/sounds.json" ],
+		"upgrades": [ "protoss/upgrades.json" ],
+		"weapons": [ "protoss/weapons.json" ],
+		"warheads": [ "protoss/warheads.json" ],
+		"effects": [],
+		"ui_params": {
+			"blazon": "ui/common/blazon_a.png",
+			"cameo_prefix": "a",
+			"eva_folder": "atreides"
+		},
+		"primary_queue": "nexus",
+		"starting_objects": [
+			{ "name": "nexus", "offset": { "x": -64, "y": -32 }, "queue": "" }
+		],
+
+		"queues": {
+			"probe": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "placement"
+			},
+			"nexus": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "inside"
+			}
+		}
+	},
+	"zerg": {
+		"objects": [ "zerg/buildings.json", "zerg/units.json" ],
+		"animations": [ "zerg/animations.json", "concrete/concrete_zanim.json" ],
+		"sounds": [ "zerg/sounds.json" ],
+		"upgrades": [ "zerg/upgrades.json" ],
+		"weapons": [ "zerg/weapons.json" ],
+		"warheads": [ "zerg/warheads.json" ],
+		"effects": [],
+		"ui_params": {
+			"blazon": "ui/common/blazon_a.png",
+			"cameo_prefix": "a",
+			"eva_folder": "atreides"
+		},
+		"primary_queue": "hatchery",
+		"starting_objects": [
+			{ "name": "hatchery", "offset": { "x": -64, "y": -32 }, "queue": "" }
+		],
+
+		"queues": {
+			"drone": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "placement"
+			},
+			"hatchery": {
+				"requires_producer": true,
+				"behavior": "single_queue",
+				"unit_spawn": "inside"
+			}
+		}
+	}
+}

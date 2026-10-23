@@ -1,0 +1,81 @@
+{
+	"_general": {
+		"bounds": { "x": 0, "y": 0, "w": 0, "h": 0 },
+		"coloring": { "type": "palette", "indices": [15, 14, 13, 12, 11, 10, 9, 8] }
+	},
+	"command_center": [
+		{
+			"sprite": "terran/command_center/control0.png",
+			"offset": { "x": 0, "y": -32 }
+		}
+	],
+	"command_center_build": [
+		{
+			"sprite": "terran/command_center/control1.png",
+			"offset": { "x": 0, "y": -32 }
+		}
+	],
+	"command_center_take_off": [
+		{
+			"sprite": "terran/command_center/control2.png",
+			"offset": { "x": 0, "y": -32 }
+		},
+		{
+			"sprite": "terran/command_center/control3.png",
+			"offset": { "x": 0, "y": -32 }
+		},
+		{
+			"sprite": "terran/command_center/control4.png",
+			"offset": { "x": 0, "y": -32 }
+		}
+	],
+	"command_center_fly": [
+		{
+			"sprite": "terran/command_center/control4.png",
+			"offset": { "x": 0, "y": -32 }
+		}
+	],
+	"command_center_land": [
+		{
+			"sprite": "terran/command_center/control4.png",
+			"offset": { "x": 0, "y": -32 }
+		},
+		{
+			"sprite": "terran/command_center/control3.png",
+			"offset": { "x": 0, "y": -32 }
+		},
+		{
+			"sprite": "terran/command_center/control2.png",
+			"offset": { "x": 0, "y": -32 }
+		}
+	],
+	"command_center_anim": [
+		{
+			"sprite": "terran/command_center/controlt0.png",
+			"offset": { "x": 0, "y": -32 }
+		},
+		{},
+		{
+			"sprite": "terran/command_center/controlt0.png",
+			"offset": { "x": 0, "y": -32 }
+		},
+		{},
+		{
+			"sprite": "terran/command_center/controlt0.png",
+			"offset": { "x": 0, "y": -32 },
+			"repeat": 4
+		},
+		{},
+		{
+			"sprite": "terran/command_center/controlt0.png",
+			"offset": { "x": 0, "y": -32 }
+		},
+		{},
+		{
+			"sprite": "terran/command_center/controlt0.png",
+			"offset": { "x": 0, "y": -32 },
+			"repeat": 3
+		},
+		{}
+	]
+}

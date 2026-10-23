@@ -1,0 +1,58 @@
+{
+	"_general": {
+		"_build": "build",
+		"selectable": true,
+		"sellable": false,
+		"repairable": false,
+		"requires_placement": true,
+		"_death_sound": "explhg1"
+	},
+	"command_center": {
+		"anims": [
+			{ "anim": "command_center", "layer": 1 }
+		],
+		"central": true,
+		"queue": "scv",
+		"armor": "building",
+		"requirements": [],
+		"cost": { "sc:mineral": 300 },
+		"sight": 4,
+		"spawn_offset": {"x": 64, "y": 64},
+		"exit_offset": {"x": 64, "y": 96},
+		"tags": ["capturable_building", "building"],
+		"_build_anim": { "anim": "cony_make", "layer": 1, "delay": 6 },
+		"producing_anim": { "anim": "command_center_anim", "layer": 1, "delay": 3 },
+		"hp": 3000,
+		"gives_queue": "command_center",
+		"build_speed": 3750,
+		"size": { "x": 128, "y": 96 },
+		"select": { "y": -4, "h": 128, "w": 96 },
+		"tiles": [
+			[15, 15, 15, 15],
+			[15, 15, 15, 15],
+			[15, 15, 15, 15]
+		]
+	},
+	"scv": {
+		"anims": [
+			{ "anim": "command_center", "layer": 1 }
+		],
+		"central": true,
+		"queue": "command_center",
+		"armor": "building",
+		"grid_bound": true,
+		"requirements": [],
+		"cost": { "sc:mineral": 50 },
+		"sight": 4,
+		"speed": 1,
+		"pass_flags": 1,
+		"tags": ["capturable_building", "building"],
+		"_build_anim": { "anim": "cony_make", "layer": 1, "delay": 6 },
+		"producing_anim": { "anim": "command_center_anim", "layer": 1, "delay": 6 },
+		"hp": 3000,
+		"gives_queue": "scv",
+		"build_speed": 630,
+		"size": { "x": 32, "y": 32 },
+		"select": { "y": -4, "h": 32, "w": 32 }
+	}
+}
