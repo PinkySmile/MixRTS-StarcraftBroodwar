@@ -5,7 +5,9 @@
 		"sellable": false,
 		"repairable": false,
 		"requires_placement": true,
-		"_death_sound": "explhg1"
+		"_death_sound": "explhg1",
+		"counts_for_game": true,
+		"counts_for_short_game": true
 	},
 	"hatchery": {
 		"anims": [

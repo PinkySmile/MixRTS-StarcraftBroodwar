@@ -15,6 +15,8 @@
 #include "Data/GameManager.hpp"
 
 static std::string __buildOrder[] = {
+	"concrete3x2",
+	"concrete4x3",
 	"command_center",
 	"comsat_station",
 	"nuclear_silo",

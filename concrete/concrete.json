@@ -5,7 +5,9 @@
 		"sellable": false,
 		"repairable": false,
 		"requires_placement": true,
-		"armor": "su"
+		"armor": "su",
+		"counts_for_game": false,
+		"counts_for_short_game": false
 	},
 	"conc": {
 		"requirements": [],
@@ -17,11 +19,11 @@
 		"tiles": [[9]],
 		"size": { "x": 32, "y": 32 }
 	},
-	"2con": {
+	"concrete3x2": {
 		"requirements": [],
 		"anims": [],
 		"queue": "scv",
-		"cost": { "minerals": 2 },
+		"cost": { "sc:mineral": 2 },
 		"tags": [],
 		"build_speed": 307,
 		"hp": 500,
@@ -32,11 +34,11 @@
 		"fake": true,
 		"size": { "x": 96, "y": 64 }
 	},
-	"3con": {
+	"concrete4x3": {
 		"requirements": ["barracks"],
 		"anims": [],
 		"queue": "scv",
-		"cost": { "minerals": 5 },
+		"cost": { "sc:mineral": 5 },
 		"tags": [],
 		"build_speed": 461,
 		"hp": 500,

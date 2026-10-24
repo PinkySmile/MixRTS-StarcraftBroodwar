@@ -1,2 +1,35 @@
 {
+	"_general": {
+		"_build": "build",
+		"selectable": true,
+		"sellable": false,
+		"repairable": false,
+		"requires_placement": true,
+		"_death_sound": "explhg1",
+		"counts_for_game": true,
+		"counts_for_short_game": false
+	},
+	"scv": {
+		"anims": [
+			{ "anim": "command_center", "layer": 1 }
+		],
+		"counts_for_short_game": true,
+		"central": true,
+		"queue": "command_center",
+		"armor": "building",
+		"grid_bound": true,
+		"requirements": [],
+		"cost": { "sc:mineral": 50 },
+		"sight": 4,
+		"speed": 1,
+		"pass_flags": 1,
+		"tags": ["capturable_building", "building"],
+		"_build_anim": { "anim": "cony_make", "layer": 1, "delay": 6 },
+		"producing_anim": { "anim": "command_center_anim", "layer": 1, "delay": 6 },
+		"hp": 3000,
+		"gives_queue": "scv",
+		"build_speed": 630,
+		"size": { "x": 32, "y": 32 },
+		"select": { "y": -4, "h": 32, "w": 32 }
+	}
 }
