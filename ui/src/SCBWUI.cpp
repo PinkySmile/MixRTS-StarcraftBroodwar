@@ -404,7 +404,7 @@ SCBWUI::SCBWUI(const Faction &faction, UIState *state, GameManager *manager, Pla
 {
 	faction.getBase().loadCursors("cursors.json", this->_cursors);
 
-	this->_getPanelObjects(base / "ui" / game->locale / "ui.gui");
+	this->_getPanelObjects(base / "ui" / game->settings.locale / "ui.gui");
 	this->_initPanel(params);
 	this->_placeUiEvents();
 	this->_loadExtraAssets();

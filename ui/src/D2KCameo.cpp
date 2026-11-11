@@ -21,9 +21,9 @@ D2KCameo::D2KCameo(const std::filesystem::path &base, const char *typeName, bool
 		setRenderer(tgui::Theme::getDefault()->getRendererNoThrow(this->m_type));
 	}
 
-	this->_spriteReady.load(base / "ui" / game->locale / "ready.png", nullptr, false, true);
+	this->_spriteReady.load(base / "ui" / game->settings.locale / "ready.png", nullptr, false, true);
 	this->_spriteReady.setPosition({1, 1});
-	this->_spriteHold.load(base / "ui" / game->locale / "hold.png", nullptr, false, true);
+	this->_spriteHold.load(base / "ui" / game->settings.locale / "hold.png", nullptr, false, true);
 
 	this->_text.setCharacterSize(10);
 	this->_text.setPosition({2, 2});
