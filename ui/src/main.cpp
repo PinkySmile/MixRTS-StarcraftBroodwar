@@ -10,11 +10,11 @@ SL_EXPORT UI *createUiFor(
 	const Faction &faction,
 	UIState *state,
 	GameManager *manager,
-	PlayerState *ownerState,
+	Player *owner,
 	MapState *map,
 	const std::filesystem::path &base,
 	const nlohmann::json &params
 )
 {
-	return new SCBWUI(faction, state, manager, ownerState, map, base, params);
+	return new SCBWUI(faction, state, manager, owner, map, base, params);
 }

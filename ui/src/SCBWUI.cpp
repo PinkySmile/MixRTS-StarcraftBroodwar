@@ -396,8 +396,8 @@ void SCBWUI::_createCameoWidgets()
 	this->_createCameoUnitsWidgets();
 }
 
-SCBWUI::SCBWUI(const Faction &faction, UIState *state, GameManager *manager, PlayerState *ownerState, MapState *map, const std::filesystem::path &base, const nlohmann::json &params) :
-	UI(faction, state, manager, ownerState, map),
+SCBWUI::SCBWUI(const Faction &faction, UIState *state, GameManager *manager, Player *owner, MapState *map, const std::filesystem::path &base, const nlohmann::json &params) :
+	UI(faction, state, manager, owner, map),
 	_prefix(params["cameo_prefix"]),
 	_modName(faction.getBase().getName()),
 	_base(base)

@@ -8,7 +8,7 @@
 			"bad":  [ "cursor/tile_bad.png"  ],
 			"best": [ "cursor/tile_best.png" ]
 		},
-		"money": [ "minerals", "vespene_gas" ],
+		"money": [ "sc:mineral", "sc:vespene_gas" ],
 		"grid": { "x": 32, "y": 32 },
 		"starting_money": { "sc:mineral": 300, "sc:vespene_gas": 0 },
 		"regress_tech": true,
