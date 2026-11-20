@@ -44,7 +44,7 @@ foreach(SCBW_ASSET_PATH ${SCBW_ASSET_FILES})
 
 	add_custom_command(
 		OUTPUT "${MOD_DEST_PATH}/${SCBW_ASSET_PATH_REL}"
-		COMMAND ${CMAKE_COMMAND} -E copy_if_different "${SCBW_ASSET_PATH}" "${MOD_DEST_PATH}/${SCBW_ASSET_PATH_REL}"
+		COMMAND ${CMAKE_COMMAND} -E copy "${SCBW_ASSET_PATH}" "${MOD_DEST_PATH}/${SCBW_ASSET_PATH_REL}"
 		DEPENDS "${SCBW_ASSET_PATH}"
 		COMMENT "Copy SCBW:${SCBW_ASSET_PATH_REL}"
 	)
@@ -58,13 +58,13 @@ add_dependencies(scbw_support_powers scbw_assets)
 
 add_custom_command(
 	OUTPUT "${MOD_DEST_PATH}/ui/ui.ui"
-	COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:scbw_ui> "${MOD_DEST_PATH}/ui/ui.ui"
+	COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:scbw_ui> "${MOD_DEST_PATH}/ui/ui.ui"
 	DEPENDS $<TARGET_FILE:scbw_ui>
 	COMMENT "Copy SCBW:ui/ui.ui"
 )
 add_custom_command(
 	OUTPUT "${MOD_DEST_PATH}/support.dl"
-	COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:scbw_support_powers> "${MOD_DEST_PATH}/support.dl"
+	COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:scbw_support_powers> "${MOD_DEST_PATH}/support.dl"
 	DEPENDS $<TARGET_FILE:scbw_support_powers>
 	COMMENT "Copy SCBW:support.dl"
 )
@@ -104,7 +104,7 @@ if (NOT NO_TEST)
 
 		add_custom_command(
 			OUTPUT "${TEST_MOD_DEST_PATH}/${SCBW_ASSET_PATH_REL}"
-			COMMAND ${CMAKE_COMMAND} -E copy_if_different "${SCBW_ASSET_PATH}" "${TEST_MOD_DEST_PATH}/${SCBW_ASSET_PATH_REL}"
+			COMMAND ${CMAKE_COMMAND} -E copy "${SCBW_ASSET_PATH}" "${TEST_MOD_DEST_PATH}/${SCBW_ASSET_PATH_REL}"
 			DEPENDS "${SCBW_ASSET_PATH}"
 			COMMENT "Copy TEST_SCBW:${SCBW_ASSET_PATH_REL}"
 		)
@@ -118,13 +118,13 @@ if (NOT NO_TEST)
 
 	add_custom_command(
 		OUTPUT "${TEST_MOD_DEST_PATH}/ui/ui.ui"
-		COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:scbw_ui> "${TEST_MOD_DEST_PATH}/ui/ui.ui"
+		COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:scbw_ui> "${TEST_MOD_DEST_PATH}/ui/ui.ui"
 		DEPENDS $<TARGET_FILE:scbw_ui>
 		COMMENT "Copy TEST_SCBW:ui/ui.ui"
 	)
 	add_custom_command(
 		OUTPUT "${TEST_MOD_DEST_PATH}/support.dl"
-		COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:scbw_support_powers> "${TEST_MOD_DEST_PATH}/support.dl"
+		COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:scbw_support_powers> "${TEST_MOD_DEST_PATH}/support.dl"
 		DEPENDS $<TARGET_FILE:scbw_support_powers>
 		COMMENT "Copy TEST_SCBW:support.dl"
 	)
