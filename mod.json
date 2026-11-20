@@ -1,3 +1,4 @@
 {
-	"name": "scbw"
+	"name": "scbw",
+	"factions": [ "factions.json" ]
 }
