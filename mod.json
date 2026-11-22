@@ -1,4 +1,5 @@
 {
 	"name": "scbw",
+	"maps_folder": "maps",
 	"factions": [ "factions.json" ]
 }
