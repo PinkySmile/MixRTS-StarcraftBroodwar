@@ -33,6 +33,11 @@
 		"starting_objects": [
 			{ "name": "command_center", "offset": { "x": -64, "y": -32 }, "queue": "" }
 		],
+		"preview": {
+			"file": "terran/animations.json",
+			"key": "command_center",
+			"size": { "x": 128, "y": 96 }
+		},
 
 		"queues": {
 			"scv": {
@@ -114,6 +119,11 @@
 		"starting_objects": [
 			{ "name": "nexus", "offset": { "x": -64, "y": -32 }, "queue": "" }
 		],
+		"preview": {
+			"file": "protoss/animations.json",
+			"key": "nexus",
+			"size": { "x": 128, "y": 96 }
+		},
 
 		"queues": {
 			"probe": {
@@ -145,6 +155,11 @@
 		"starting_objects": [
 			{ "name": "hatchery", "offset": { "x": -64, "y": -32 }, "queue": "" }
 		],
+		"preview": {
+			"file": "zerg/animations.json",
+			"key": "hatchery",
+			"size": { "x": 128, "y": 96 }
+		},
 
 		"queues": {
 			"drone": {
